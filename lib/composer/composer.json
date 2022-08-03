@@ -1,0 +1,19 @@
+{
+    "name": "marlon/calendar",
+    "description": "Agenda de eventos com a funcionalidade arrasta e solta",
+    "autoload": {
+        "psr-4": {
+            "Marlon\\Calendar\\": "src/",
+            "Classes\\": "../../class",
+            "Models\\": "../../model"
+            
+        }
+    },
+    "authors": [
+        {
+            "name": "Marlon Paulo",
+            "email": "marlon.paulo.silva@outlook.com"
+        }
+    ],
+    "require": {}
+}

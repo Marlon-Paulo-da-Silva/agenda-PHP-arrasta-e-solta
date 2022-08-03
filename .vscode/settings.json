@@ -1,0 +1,10 @@
+{
+  "editor.multiCursorModifier": "ctrlCmd",
+  "[php]": {
+    "files.encoding": "utf8"
+  },
+  "[html]": {
+    "files.encoding": "utf8"
+  },
+  "workbench.list.multiSelectModifier": "alt"
+}

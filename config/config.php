@@ -13,9 +13,9 @@ define('DIRREQ', "{$_SERVER['DOCUMENT_ROOT']}{$bar}{$dirInt}");
 
 # Banco de dados
 
-define('DB_SERVER',   'localhost');
-define('DB_NAME',     'agenda-eventos');
-define('DB_CHARSET',  'utf8');
+define('DB_SERVER', 'localhost');
+define('DB_NAME', 'sistemadeeventos');
+define('DB_CHARSET', 'utf8');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 

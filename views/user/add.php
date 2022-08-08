@@ -2,10 +2,10 @@
 <?php include(DIRREQ.'lib/html/header.php') ?>
 <?php 
   $date = new \DateTime($_GET['date'], new \DateTimeZone('America/Sao_Paulo'));
-  var_dump($date);
+  // var_dump($date);
 ?>
 
-  <form name="formAdd" id="formAdd" action="<?php echo DIRPAGE.'controllers/ControllerAdd.php'; ?>">
+  <form name="formAdd" id="formAdd" method="post" action="<?php echo DIRPAGE.'controllers/ControllerAdd.php'; ?>">
     Data: <input type="date" name="date" id="date" value="<?php echo $date->format("Y-m-d"); ?>"><br />
     Hora: <input type="time" name="time" id="time" value="<?php echo $date->format("H:i"); ?>"><br />
     Paciente: <input type="text" name="title" id="title"><br />
@@ -16,6 +16,7 @@
       <option value="2">2h</option>
       <option value="3">3h</option>
     </select>
+    <input type="submit" value="Marcar Consulta">
 
   </form>
 <?php include(DIRREQ.'lib/html/footer.php') ?>

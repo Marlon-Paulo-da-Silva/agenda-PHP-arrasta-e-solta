@@ -38,4 +38,23 @@
       return $f = $b->fetch(\PDO::FETCH_ASSOC);
     }
 
+    # Atualizar os dados de eventos do banco
+    public function updateEvent($id, $title, $description, $start){
+      $b = $this->connectDB()->prepare("UPDATE events SET title = ?, `description` = ?, `start` = ? WHERE id = ?");
+      $b->bindParam(1, $title, \PDO::PARAM_STR);
+      $b->bindParam(2, $description, \PDO::PARAM_STR);
+      $b->bindParam(3, $start, \PDO::PARAM_STR);
+      $b->bindParam(4, $id, \PDO::PARAM_INT);
+
+      $b->execute();
+
+    }
+
+    # Apagar o evento no banco
+    public function deleteEvent($id){
+      $b = $this->connectDB()->prepare("DELETE FROM events WHERE id = ?");
+      $b->bindParam(1, $id, \PDO::PARAM_INT);
+      $b->execute();
+    }
+
   }

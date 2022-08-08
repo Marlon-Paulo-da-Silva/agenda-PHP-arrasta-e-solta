@@ -10,6 +10,8 @@
   
 ?>
 
+  <a id="delete" href="<?= DIRPAGE.'controllers/ControllerDelete.php?id='.$_GET['id']; ?>"><i class="fas fa-trash"></i></a>
+
   <form name="formEdit" id="formEdit" method="post" action="<?php echo DIRPAGE.'controllers/ControllerEdit.php'; ?>">
     <input type="hidden" name="id" id="id" value="<?= $_GET['id']; ?>"><br />
     Data: <input type="date" name="date" id="date" value="<?php echo $date->format("Y-m-d"); ?>"><br />

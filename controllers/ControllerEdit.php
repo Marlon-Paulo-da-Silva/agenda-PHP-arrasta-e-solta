@@ -13,6 +13,6 @@
   
 
 
-  $objEvents->createEvent(0, $title, $description, 'blue', $start->format("Y-m-d H:i:s"), $start->modify('+' . $horasAtendimento. 'hours')->format("Y-m-d H:i:s"));
+  $objEvents->updateEvent($id, $title, $description, $start->format("Y-m-d H:i:s"));
 
   

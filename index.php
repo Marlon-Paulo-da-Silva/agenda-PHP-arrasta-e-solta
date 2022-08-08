@@ -1,24 +1,9 @@
 <?php include('config/config.php') ?>
+<?php include(DIRREQ.'lib/html/header.php') ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="<?php echo DIRPAGE . 'lib/css/style.css' ?>">
-  <link rel="stylesheet" href="<?php echo DIRPAGE . 'lib/js/FullCalendar/main.min.css' ?>">
-  <title>Calendário agenda com PHP</title>
-</head>
-<body>
+  <a href="<?php echo DIRPAGE.'views/user'; ?>">Calendário do Usuário</a><br><br>
+  <a href="<?php echo DIRPAGE.'views/manager'; ?>">Calendário do Gerente</a>
 
-  <div class="calendar">
-
-  </div>
+<?php include(DIRREQ.'lib/html/footer.php') ?>
 
   
-  
-  <script src="<?php echo DIRPAGE.'lib/js/FullCalendar/main.min.js' ?>"></script>
-  <script src="<?php echo DIRPAGE.'lib/js/script.js' ?>"></script>
-</body>
-</html>

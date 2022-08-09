@@ -1,7 +1,7 @@
 # agenda-PHP-arrasta-e-solta
 
 <div align="center">
-  <img align="center" src="https://giphy.com/embed/LMgssNUTQzkLtCVaqd" alt="demo" height="425">
+  <img align="center" src="https://raw.githubusercontent.com/Marlon-Paulo-da-Silva/agenda-PHP-arrasta-e-solta/main/recursos/full-calendar.gif" alt="demo" height="425">
   
 </div>
  

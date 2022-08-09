@@ -57,4 +57,16 @@
       $b->execute();
     }
 
+    # Atualização de data e hora pelo arrasta e solta
+    public function updateDropEvent($id, $start, $end){
+      $b = $this->connectDB()->prepare("UPDATE events SET `start` = ?, `end` = ? WHERE id = ?");
+      
+      $b->bindParam(1, $start, \PDO::PARAM_STR);
+      $b->bindParam(2, $end, \PDO::PARAM_STR);
+      $b->bindParam(3, $id, \PDO::PARAM_INT);
+
+      $b->execute();
+
+    }
+
   }
